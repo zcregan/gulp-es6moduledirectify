@@ -1,0 +1,23 @@
+{
+  "name": "gulp-es6moduledirectify",
+  "version": "1.0.0",
+  "description": "Gulp plugin that traverses a directory structure and creates importable directories according to the rules outlined here: https://nodejs.org/api/modules.html#modules_folders_as_modules in ES6 module syntax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcregan/gulp-es6moduledirectify.git"
+  },
+  "author": "Zachary Cregan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zcregan/gulp-es6moduledirectify/issues"
+  },
+  "homepage": "https://github.com/zcregan/gulp-es6moduledirectify",
+  "dependencies": {
+    "through2": "^0.6.3",
+    "vinyl": "^0.4.6"
+  }
+}
