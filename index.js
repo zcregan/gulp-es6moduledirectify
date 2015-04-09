@@ -13,13 +13,19 @@ module.exports = function () {
 			//if not at base directory (we don't want to generate files outside of the base)
 			if (file.relative != fileName) {
 				dictionary[dirName] = dictionary[dirName] || {};
-				dictionary[dirName].pjson = file;
+				dictionary[dirName].pjson = file.clone({
+					deep: false,
+					contents: false
+				});
 			}
 		} else if (fileName == 'index.js') {
 			//if not at base directory (we don't want to generate files outside of the base)
 			if (file.relative != fileName) {
 				dictionary[dirName] = dictionary[dirName] || {};
-				dictionary[dirName].index = file;
+				dictionary[dirName].index = file.clone({
+					deep: false,
+					contents: false
+				});
 			}
 		}
 
